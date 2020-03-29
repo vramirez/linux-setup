@@ -8,7 +8,7 @@ git clone https://github.com/erpalma/lenovo-throttling-fix.git
 sudo ./lenovo-throttling-fix/install.sh
 
 sudo mv /usr/share/budgie-extras-daemon/tilix_alt.bde  /usr/share/budgie-extras-daemon/tilix_alt.bde.bak
-
+sudo cp tlp.txt /etc/default/tlp
 
 echo "Installing Snaps"
 sudo snap install code --classic
@@ -31,3 +31,10 @@ conda env create -f conda-envs/ig-api.yml
 conda env create -f conda-envs/twpy3.yml 
 conda env create -f conda-envs/uribot.yml 
 conda env create -f conda-envs/yutub.yml 
+
+echo "$CONDA_HOME/etc/profile.d/conda.sh" >> $HOME/.bashrc
+
+##PENDING
+# DOCUMENTAR EN EL README EL LENOVO THERMAL
+# generar documento con los valores de threshold y undervolt
+# 
