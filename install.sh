@@ -36,5 +36,5 @@ echo "$CONDA_HOME/etc/profile.d/conda.sh" >> $HOME/.bashrc
 
 ##PENDING
 # DOCUMENTAR EN EL README EL LENOVO THERMAL
-# generar documento con los valores de threshold y undervolt
+
 # 
