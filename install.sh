@@ -28,11 +28,12 @@ sh miniconda.sh -b -p $CONDA_HOME
 echo "Installing conda envs"
 conda update -n base -c defaults conda -y
 conda env create -f conda-envs/ig-api.yml 
+conda env create -f conda-envs/data-mining.yml
 conda env create -f conda-envs/twpy3.yml 
 conda env create -f conda-envs/uribot.yml 
 conda env create -f conda-envs/yutub.yml 
 
-echo "$CONDA_HOME/etc/profile.d/conda.sh" >> $HOME/.bashrc
+echo ". $CONDA_HOME/etc/profile.d/conda.sh" >> $HOME/.bashrc
 
 ##PENDING
 # DOCUMENTAR EN EL README EL LENOVO THERMAL
