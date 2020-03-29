@@ -1,0 +1,27 @@
+echo "REMBER INSTALLING FIRST CONDA!!!"
+sudo apt update -y
+sudo apt install gnome-tweak-tool git tlp tlp-rdw acpi-call-dkms tp-smapi-dkms acpi-call-dkms build-essential python3-dev libdbus-glib-1-dev libgirepository1.0-dev libcairo2-dev python3-venv python3-wheel  -y
+git clone https://github.com/erpalma/lenovo-throttling-fix.git
+sudo ./lenovo-throttling-fix/install.sh
+
+sudo mv /usr/share/budgie-extras-daemon/tilix_alt.bde  /usr/share/budgie-extras-daemon/tilix_alt.bde.bak
+. /home/vramirez/anaconda3/etc/profile.d/conda.sh
+
+echo "Installing Snaps"
+sudo snap install code --classic
+sudo snap install whatsdesk
+sudo snap install skype --classic
+sudo snap install slack --classic
+sudo snap install teams-for-linux
+sudo snap install spotify
+sudo snap install onenote-desktop --beta
+sudo snap install simplenote
+sudo snap install vlc
+sudo snap install libreoffice
+
+echo "Installing conda envs"
+conda update -n base -c defaults conda -y
+conda env create -f conda-envs/ig-api.yml 
+conda env create -f conda-envs/twpy3.yml 
+conda env create -f conda-envs/uribot.yml 
+conda env create -f conda-envs/yutub.yml 
