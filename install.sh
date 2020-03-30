@@ -14,6 +14,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ./
 
 echo "Installing Snaps"
 
+sudo snap install firefox
 sudo snap install code --classic
 sudo snap install whatsdesk
 sudo snap install skype --classic
@@ -37,6 +38,9 @@ conda env create -f conda-envs/uribot.yml
 conda env create -f conda-envs/yutub.yml 
 
 echo ". $CONDA_HOME/etc/profile.d/conda.sh" >> $HOME/.bashrc
+
+git config --global user.email "ramirez.vmanuel@gmail.com"
+git config --global user.name "Victor M. Ramirez"
 
 ##PENDING
 # DOCUMENTAR EN EL README EL LENOVO THERMAL
