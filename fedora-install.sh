@@ -5,7 +5,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 sudo dnf install http://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm -y
 sudo dnf upgrade --refresh -y
 #Herramientas 
-sudo dnf install gnome-tweak-tool tilix snapd -y
+sudo dnf install gnome-tweak-tool tilix snapd pam_yubico -y
 #TLP basic
 sudo dnf install tlp tlp-rdw  -y
 #TLP additional
@@ -65,3 +65,14 @@ git config --global user.name "Victor M. Ramirez"
 
 rm $MINICONDA_FILE
 rm wget-log
+
+
+## 
+############# Disable WAYLAND
+    ##Open /etc/gdm/custom.conf and uncomment WaylandEnable=false.
+    ##Add the following line to the [daemon] section:
+
+    ##DefaultSession=gnome-xorg.desktop
+
+    #Save the custom.conf file.
+
