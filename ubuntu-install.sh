@@ -1,5 +1,6 @@
 CONDA_HOME=$HOME/miniconda
 MINICONDA_FILE=./miniconda.sh
+sudo add-apt-repository ppa:linrunner/tlp
 sudo apt update -y
 sudo apt install gnome-tweak-tool git tlp tlp-rdw acpi-call-dkms tp-smapi-dkms acpi-call-dkms build-essential python3-dev libdbus-glib-1-dev libgirepository1.0-dev libcairo2-dev python3-venv python3-wheel curl apt-transport-https ca-certificates software-properties-common -y 
 git clone https://github.com/erpalma/lenovo-throttling-fix.git
