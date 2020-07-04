@@ -11,6 +11,8 @@ Snaps for
 * MS Teams
 * WhatsApp Desk
 * Slack
+* Telegram
+* MS OneNote (Beta)
 
 ## Conda
 Also sets up my own conda environments, available at conda-envs folder
