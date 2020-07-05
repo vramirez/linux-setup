@@ -19,6 +19,6 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl enable docker
 
-sh miniconda_install.sh
-sh snaps_install
+sh miniconda_install.sh&
+sh snaps_install.sh
 sh git_setup.sh
