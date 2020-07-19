@@ -1,5 +1,6 @@
 echo "Downloading Miniconda..."
-
+CONDA_HOME=$HOME/miniconda
+MINICONDA_FILE=./miniconda.sh
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O $MINICONDA_FILE
 
 sh $MINICONDA_FILE -b -p $CONDA_HOME
