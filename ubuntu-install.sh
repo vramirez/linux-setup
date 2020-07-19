@@ -19,6 +19,8 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl enable docker
 
-sh miniconda_install.sh&
-sh snaps_install.sh
-sh git_setup.sh
+sh common/pre-setup.sh
+sh common/miniconda_install.sh&
+sh common/snaps_install.sh
+sh common/git_setup.sh
+sh common/aws-cli-install.sh
