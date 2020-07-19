@@ -1,15 +1,15 @@
 # Refresh outdated keyring
-sudo pacman --no-confirm -Sy archlinux-keyring manjaro-keyring
+sudo pacman --noconfirm -Sy archlinux-keyring manjaro-keyring
 sudo pacman-key --populate archlinux manjaro
 sudo pacman-key --refresh-keys
-sudo pacman --no-confirm -Syu
+sudo pacman --noconfirm -Syu
 
 # Tilix terminal
-pacman --no-confirm -Sy tilix
+pacman --noconfirm -Sy tilix
 
 
 # Install TLP
-pacman --no-confirm -S tlp tlp-rdw acpi_call tp_smapi
+pacman --noconfirm -S tlp tlp-rdw acpi_call tp_smapi
 systemctl enable tlp.service
 systemctl enable NetworkManager-dispatcher.service
 systemctl mask systemd-rfkill.service
@@ -17,11 +17,11 @@ systemctl mask systemd-rfkill.socket
 
 # Lenovo Throttling
 
-pacman --no-confirm -S throttled
+pacman --noconfirm -S throttled
 sudo systemctl enable --now lenovo_fix.service
 
 # Install docker
-sudo pacman --no-confirm -S docker
+sudo pacman --noconfirm -S docker
 sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl enable docker
