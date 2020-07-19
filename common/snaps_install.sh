@@ -13,3 +13,4 @@ sudo snap install vlc
 sudo snap install libreoffice
 sudo snap install gnome-system-monitor 
 sudo snap install telegram-desktop
+sudo snap install qbittorrent-arnatious
