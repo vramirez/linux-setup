@@ -4,6 +4,9 @@ sudo pacman-key --populate archlinux manjaro
 sudo pacman-key --refresh-keys
 sudo pacman --noconfirm -Syu
 
+# Archlinux build packages (for building snap)
+sudo pacman --noconfirm -Sy base-devel
+
 # Tilix terminal
 pacman --noconfirm -Sy tilix
 
@@ -36,6 +39,7 @@ sudo ln -s /var/lib/snapd/snap /snap
 
 
 #  Common installation (Snap, configs, etc)
+cd ..
 sh common/all-common.sh
 
 
