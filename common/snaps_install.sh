@@ -1,6 +1,6 @@
 echo "Installing Snaps"
 
-sudo snap install firefox
+sudo snap install brave
 sudo snap install code --classic
 sudo snap install whatsdesk
 sudo snap install skype --classic
