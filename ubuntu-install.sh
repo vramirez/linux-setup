@@ -16,5 +16,5 @@ sudo apt install docker-ce -y
 sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl enable docker
-
+sudo snap install google-cloud-sdk --classic
 sh common/all-common.sh
