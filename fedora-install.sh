@@ -15,6 +15,8 @@ sudo dnf install python3-cairo-devel cairo-gobject-devel gobject-introspection-d
 git clone https://github.com/erpalma/lenovo-throttling-fix.git
 sudo ./lenovo-throttling-fix/install.sh
 
+rm -rf ./lenovo-throttling-fix
+sudo dnf autoremove -y
 #sudo mv /usr/share/budgie-extras-daemon/tilix_alt.bde  /usr/share/budgie-extras-daemon/tilix_alt.bde.bak
 
 
@@ -28,7 +30,7 @@ sudo systemctl enable docker
 
 sh common/all-common.sh
 
-
+sudo dnf autoremove -y
 rm $MINICONDA_FILE
 rm wget-log
 
