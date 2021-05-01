@@ -1,5 +1,6 @@
 echo "Installing Snaps"
 
+sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install brave
 sudo snap install code --classic
 sudo snap install whatsdesk
