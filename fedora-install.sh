@@ -31,7 +31,6 @@ sudo systemctl enable docker
 sh common/all-common.sh
 
 sudo dnf autoremove -y
-rm $MINICONDA_FILE
 rm wget-log
 
 
