@@ -16,3 +16,5 @@ sudo snap install gnome-system-monitor
 sudo snap install telegram-desktop
 sudo snap install qbittorrent-arnatious
 sudo snap install hey-mail
+sudo snap install postman
+
